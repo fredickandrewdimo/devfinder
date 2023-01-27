@@ -1,0 +1,24 @@
+{
+  "name": "devfinder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./css/main.css",
+    "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fredickandrewdimo/devfinder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fredickandrewdimo/devfinder/issues"
+  },
+  "homepage": "https://github.com/fredickandrewdimo/devfinder#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
