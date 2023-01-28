@@ -573,12 +573,12 @@ video {
   margin-right: 0.5rem;
 }
 
-.mr-4{
-  margin-right: 1rem;
-}
-
 .ml-8{
   margin-left: 2rem;
+}
+
+.mr-4{
+  margin-right: 1rem;
 }
 
 .mt-4{
@@ -589,16 +589,40 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-4{
+  margin-bottom: 1rem;
+}
+
+.ml-4{
+  margin-left: 1rem;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
+}
+
+.ml-2{
+  margin-left: 0.5rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
+}
+
+.mt-1{
+  margin-top: 0.25rem;
+}
+
+.mb-1{
+  margin-bottom: 0.25rem;
+}
+
 .flex{
   display: flex;
 }
 
 .h-6{
   height: 1.5rem;
-}
-
-.h-24{
-  height: 6rem;
 }
 
 .h-28{
@@ -609,6 +633,10 @@ video {
   height: 1rem;
 }
 
+.h-8{
+  height: 2rem;
+}
+
 .w-full{
   width: 100%;
 }
@@ -617,16 +645,16 @@ video {
   width: 1.5rem;
 }
 
-.w-24{
-  width: 6rem;
-}
-
 .w-28{
   width: 7rem;
 }
 
 .w-4{
   width: 1rem;
+}
+
+.w-8{
+  width: 2rem;
 }
 
 .justify-between{
@@ -660,17 +688,16 @@ video {
   background-color: rgb(52 119 245 / var(--tw-bg-opacity));
 }
 
-.bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 253 255 / var(--tw-bg-opacity));
-}
-
 .stroke-royalBlue{
   stroke: rgb(39, 79, 153);
 }
 
 .p-4{
   padding: 1rem;
+}
+
+.p-2{
+  padding: 0.5rem;
 }
 
 .px-4{
@@ -712,11 +739,6 @@ video {
   line-height: 1.5rem;
 }
 
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -725,11 +747,6 @@ video {
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-bold{
@@ -756,8 +773,62 @@ video {
   outline-offset: 2px;
 }
 
+@media (min-width: 640px){
+  .sm\:mb-0{
+    margin-bottom: 0px;
+  }
+
+  .sm\:ml-8{
+    margin-left: 2rem;
+  }
+
+  .sm\:ml-20{
+    margin-left: 5rem;
+  }
+
+  .sm\:ml-24{
+    margin-left: 6rem;
+  }
+
+  .sm\:ml-28{
+    margin-left: 7rem;
+  }
+
+  .sm\:ml-32{
+    margin-left: 8rem;
+  }
+
+  .sm\:mt-6{
+    margin-top: 1.5rem;
+  }
+
+  .sm\:flex{
+    display: flex;
+  }
+
+  .sm\:justify-between{
+    justify-content: space-between;
+  }
+
+  .sm\:pl-4{
+    padding-left: 1rem;
+  }
+}
+
 @media (min-width: 768px){
   .md\:w-2\/4{
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:w-2\/4{
+    width: 50%;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:w-2\/4{
     width: 50%;
   }
 }
