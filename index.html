@@ -20,7 +20,7 @@
 
 <body class="bg-darkBlue ">
 
-    <div id="main" class="container mx-auto px-4 py-20 xl:w-2/4 font-mono">
+    <div id="main" class="container mx-auto px-4 py-2 sm:py-20 xl:w-2/4 font-mono">
         <nav class="my-2">
             <div class="flex align-center justify-between py-4">
                 <a id="" class="text-white font-mono font-bold text-xl" href="">devfinder</a>
@@ -45,48 +45,51 @@
                                 d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                         </svg>
                     </button>
-                    <input id="" class="w-full text-white text-base focus:outline-none bg-semiDarkBlue" type="text"
+                    <input id="input-username"
+                        class="w-full text-white text-sm sm:text-base focus:outline-none bg-semiDarkBlue" type="text"
                         placeholder="Search Github username...">
                 </div>
-                <button id="" class="bg-lightBlue py-2 px-4 rounded-md text-white">Search</button>
+                <button id="search-btn" class="bg-lightBlue py-2 px-4 rounded-md text-white">Search</button>
             </div>
         </div>
 
         <div class="mt-2 mb-4 p-4 bg-semiDarkBlue rounded-md">
             <div class="flex align-center p-2">
-                <div class="">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                        class="w-28 h-28 mr-4 text-white rounded-full">
+                <div id="" class="">
+                    <img id="avatar-container" class="w-20 h-20 sm:w-28 sm:h-28 mr-2 sm:mr-4 text-white rounded-full"
+                        src="" alt="">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="w-20 h-20 sm:w-28 sm:h-28 mr-2 sm:mr-4 text-white rounded-full">
                         <path fill-rule="evenodd"
                             d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
                             clip-rule="evenodd" />
-                    </svg>
+                    </svg> -->
                 </div>
-                <div class="sm:flex align-center justify-between px-2 w-full mt-4 sm:mt-6">
+                <div class="sm:flex align-center justify-between px-2 w-full sm:mt-6 mb-2">
                     <div class="">
-                        <p class="text-white text-xl font-bold">The Octocat</p>
-                        <p class="text-royalBlue mb-2">@octocat</p>
+                        <p id="name" class="text-white text-xl font-bold">The Octocat</p>
+                        <p id="login" class="text-royalBlue mb-2">@octocat</p>
                     </div>
-                    <p class="text-white text-sm">Joined 25 Jan 2011</p>
+                    <p id="date-joined" class="text-white text-sm">Joined 25 Jan 2011</p>
                 </div>
             </div>
             <div class="px-4 sm:ml-32">
                 <div class="">
-                    <p class="text-gray text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga
+                    <p id="bio" class="text-gray text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga
                         distinctio ipsam voluptates unde ut beatae, consequatur libero voluptatibus nemo illo?</p>
                 </div>
                 <div class="text-white my-6 bg-darkBlue rounded-md p-4 flex justify-around">
                     <div class="">
                         <p class="text-sm">Repos</p>
-                        <p class="text-2xl font-bold">8</p>
+                        <p id="repos" class="text-2xl font-bold">8</p>
                     </div>
                     <div class="">
                         <p class="text-sm">Followers</p>
-                        <p class="text-2xl font-bold">3938</p>
+                        <p id="followers" class="text-2xl font-bold">3938</p>
                     </div>
                     <div class="">
                         <p class="text-sm">Following</p>
-                        <p class="text-2xl font-bold">9</p>
+                        <p id="following" class="text-2xl font-bold">9</p>
                     </div>
                 </div>
                 <div class="my-6 sm:flex sm:justify-between w-full">
@@ -99,7 +102,7 @@
                                     clip-rule="evenodd" />
                             </svg>
 
-                            <p class="text-white text-sm">San Francisco</p>
+                            <p id="location" class="text-white text-sm">San Francisco</p>
                         </div>
                         <div class="flex sm:mb-0 my-2">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -109,7 +112,7 @@
                                     clip-rule="evenodd" />
                             </svg>
 
-                            <p class="text-white text-sm">https://github.blog</p>
+                            <p id="html-url" class="text-white text-sm">https://github.blog</p>
                         </div>
                     </div>
                     <div>
@@ -121,7 +124,7 @@
                                 </path>
                             </svg>
 
-                            <p class="text-white text-sm">Not Available</p>
+                            <p id="twitter-username" class="text-white text-sm">Not Available</p>
                         </div>
                         <div class="flex">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -130,7 +133,7 @@
                                     d="M3 2.25a.75.75 0 000 1.5v16.5h-.75a.75.75 0 000 1.5H15v-18a.75.75 0 000-1.5H3zM6.75 19.5v-2.25a.75.75 0 01.75-.75h3a.75.75 0 01.75.75v2.25a.75.75 0 01-.75.75h-3a.75.75 0 01-.75-.75zM6 6.75A.75.75 0 016.75 6h.75a.75.75 0 010 1.5h-.75A.75.75 0 016 6.75zM6.75 9a.75.75 0 000 1.5h.75a.75.75 0 000-1.5h-.75zM6 12.75a.75.75 0 01.75-.75h.75a.75.75 0 010 1.5h-.75a.75.75 0 01-.75-.75zM10.5 6a.75.75 0 000 1.5h.75a.75.75 0 000-1.5h-.75zm-.75 3.75A.75.75 0 0110.5 9h.75a.75.75 0 010 1.5h-.75a.75.75 0 01-.75-.75zM10.5 12a.75.75 0 000 1.5h.75a.75.75 0 000-1.5h-.75zM16.5 6.75v15h5.25a.75.75 0 000-1.5H21v-12a.75.75 0 000-1.5h-4.5zm1.5 4.5a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75h-.008a.75.75 0 01-.75-.75v-.008zm.75 2.25a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75v-.008a.75.75 0 00-.75-.75h-.008zM18 17.25a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75h-.008a.75.75 0 01-.75-.75v-.008z"
                                     clip-rule="evenodd" />
                             </svg>
-                            <p class="text-white text-sm">@github</p>
+                            <p id="company" class="text-white text-sm">@github</p>
                         </div>
                     </div>
                 </div>
