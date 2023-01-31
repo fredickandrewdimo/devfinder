@@ -18,6 +18,7 @@ const companyEl = document.getElementById("company");
 async function getUserData(username) {
   try {
     const response = await fetch(`https://api.github.com/users/${username}`);
+    if (!response.ok) throw new Error("Invalid username");
     const data = await response.json();
 
     // Get the Avatar URL
@@ -91,6 +92,8 @@ async function getUserData(username) {
 const searchBtn = document.getElementById("search-btn");
 searchBtn.addEventListener("click", () => {
   const username = inputUsername.value;
-  getUserData(username);
-  inputUsername.value = "";
+  if (username) {
+    getUserData(username);
+    inputUsername.value = "";
+  }
 });
