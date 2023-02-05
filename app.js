@@ -1,6 +1,7 @@
 // Input Element for username
 const inputUsername = document.getElementById("input-username");
 
+// Fetch data on Github User API
 async function getUserData(username) {
   const data = localStorage.getItem(username);
   if (data) {
