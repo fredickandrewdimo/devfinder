@@ -31,6 +31,6 @@ During the development of the App, I gained valuable experience and knowledge in
 
 ### Preview
 
-<img align="left" alt="#" width="400px" src="" style="padding-right:20px;"/>
+<img align="left" alt="#" width="400px" src="https://github.com/fredickandrewdimo/devfinder/blob/main/images/devfinder-preview.png" style="padding-right:20px;"/>
 
-<img align="left" alt="#" width="400px" src="" />
+<img align="left" alt="#" width="400px" src="https://github.com/fredickandrewdimo/devfinder/blob/main/images/dev-preview-2.png" />
