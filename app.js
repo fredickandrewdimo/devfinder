@@ -3,11 +3,11 @@ const inputUsername = document.getElementById("input-username");
 
 // Fetch data on Github User API
 async function getUserData(username) {
-  const data = localStorage.getItem(username);
-  if (data) {
-    updateProfileData(JSON.parse(data));
-    return;
-  }
+  // const data = localStorage.getItem(username);
+  // if (data) {
+  //   updateProfileData(JSON.parse(data));
+  //   return;
+  // }
 
   try {
     const response = await fetch(`https://api.github.com/users/${username}`);
@@ -15,7 +15,7 @@ async function getUserData(username) {
     const data = await response.json();
 
     // Save the fetched data to local storage
-    localStorage.setItem(username, JSON.stringify(data));
+    // localStorage.setItem(username, JSON.stringify(data));
 
     updateProfileData(data);
   } catch (error) {
@@ -37,7 +37,6 @@ function updateProfileData(data) {
 
   const date = new Date(Date.parse(dateJoined));
   const formattedDate = date.toLocaleDateString();
-  console.log(formattedDate);
   document.getElementById("date-joined").innerText = `Joined ${formattedDate}`;
 
   // Get the Bio
@@ -91,6 +90,8 @@ function updateProfileData(data) {
   const loginEl = document.getElementById("login");
   loginEl.innerText = `@${login}`;
   loginEl.href = htmlURL;
+
+  console.log("Successful");
 }
 
 // Search Button Element
@@ -99,6 +100,12 @@ searchBtn.addEventListener("click", () => {
   const username = inputUsername.value;
   if (username) {
     getUserData(username);
+    const mainContainer = document.getElementById("main-container");
+    mainContainer.classList.toggle("hidden");
+    setTimeout(() => {
+      mainContainer.classList.remove("hidden");
+    }, 500);
     inputUsername.value = "";
+    inputUsername.focus();
   }
 });
